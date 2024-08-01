@@ -1,39 +1,39 @@
 import java.util.Objects;
 
 
-public class BL extends contenedor {
+public class BL extends Contenedor {
     private String numeroBL;
-    private String contenedor;
+    private String Contenedor;
     private String vin1;
     private String vin2;
     private String vin3;
 
     public BL(String contenedor, String vin1, String vin2, String vin3) {
-        this.contenedor = contenedor;
+        this.Contenedor = contenedor;
         this.vin1 = vin1;
         this.vin2 = vin2;
         this.vin3 = vin3;
     }
     public BL(String contenedor, String vin1, String vin2) {
-        this.contenedor = contenedor;
+        this.Contenedor = contenedor;
         this.vin1 = vin1;
         this.vin2 = vin2;
     }
     public BL(String contenedor, String vin1) {
-        this.contenedor = contenedor;
+        this.Contenedor = contenedor;
         this.vin1 = vin1;
     }
     public BL(String contenedor) {
-        this.contenedor = contenedor;
+        this.Contenedor = contenedor;
     }
     public BL() {}
 
     public void mostrarBL() {
-        if(!Objects.equals(contenedor, null)){
+        if(!Objects.equals(Contenedor, null)){
             System.out.print("Numero de Contenedor: ");
-            System.out.println(contenedor);
+            System.out.println(Contenedor);
             System.out.print("Contenedor valido: ");
-            System.out.println(validarContenedor(contenedor));
+            System.out.println(validarContenedor(Contenedor));
         }
         if(!Objects.equals(vin1, null)) {
             System.out.print("Numero de vin 1: ");
