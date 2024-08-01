@@ -1,4 +1,4 @@
-public class Contenedor extends vehiculo {
+public class Contenedor extends Vehiculo {
 
     public boolean validarContenedor(String numeroContenedor) {
         numeroContenedor = numeroContenedor.replace("-", "");

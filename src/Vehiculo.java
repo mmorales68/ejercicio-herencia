@@ -22,7 +22,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class vehiculo {
+public class Vehiculo {
     public String obtenerAtributo(String vin, String atributo) {
         String urlString = "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/" + vin + "?format=xml";
         try {
